@@ -1,0 +1,476 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>sitbal2017 - abapGit</title>
+
+		<link rel="stylesheet" href="ext/font-awesome-4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="ext/octicons/octicons.css">
+		<link rel="stylesheet" href="ext/prism/prism.css" />
+		<link rel="stylesheet" href="ext/reveal.js-3.3.0/css/reveal.css">
+		<link rel="stylesheet" href="theme.css">
+		<link rel="stylesheet" href="squares.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="ext/reveal.js-3.3.0/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'ext/reveal.js-3.3.0/css/print/pdf.css' : 'ext/reveal.js-3.3.0/css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+<section>
+<img src="img/logo.svg" class="plain"><br>
+<b>SAP Inside Track Ballerup 2017</b>
+</section>
+
+<section>
+<table>
+<tr>
+<td><a href="https://twitter.com/LarsHvam"><i class="fa fa-twitter fa-5x plain"></i></a></td>
+<td valign="middle"><a href="https://twitter.com/LarsHvam">@LarsHvam</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/larshp"><i class="fa fa-github fa-5x plain"></i></a></td>
+<td><a href="https://github.com/larshp">larshp</a></td>
+</tr>
+</table>
+</section>
+
+<section>
+<h3>Disclaimer</h3>
+<img src="img/const.gif" class="plain">
+<marquee>Test in sandbox</marquee>
+<br>
+<ul>
+<li>Open source</li>
+<li>Old versions available</li>
+<li>Contribute</li>
+</ul>
+</section>
+
+<section>
+<table>
+<tr><td colspan="2"><b>Git client for ABAP</b></td></tr>
+<tr><td><i class="mega-octicon more-mega octicon-calendar"></i></td><td>started ~3 years ago</td></tr>
+<tr><td><i class="mega-octicon more-mega octicon-git-commit"></i></td><td>~1500 commits</td></tr>
+<tr><td><i class="mega-octicon more-mega octicon-organization"></i></td><td>22 contributors</td></tr>
+<tr><td><i class="mega-octicon more-mega octicon-code"></i></td><td>~50000 lines</td></tr>
+<tr><td><i class="mega-octicon more-mega octicon-versions"></i></td><td>7.02 and up</td></tr>
+</table>
+</section>
+
+<section>
+<table>
+<tr>
+<td>Alexander Tsybulsky</td>
+<td><a href="https://github.com/sbcgua/"><i class="fa fa-github plain"></i></a></td>
+<td>Eduardo Copat</td>
+<td><a href="https://github.com/EduardoCopat/"><i class="fa fa-github plain"></i></a></td>
+</tr>
+
+<tr>
+<td>Oliver Jägle</td>
+<td><a href="https://github.com/mrsimpson/"><i class="fa fa-github plain"></i></a></td>
+<td>Svitlana Shlapak</td>
+<td><a href="https://github.com/sshlapak/"><i class="fa fa-github plain"></i></a></td>
+</tr>
+
+<tr>
+<td>Andrei Vishnevsky</td>
+<td><a href="https://github.com/VishnAndr/"><i class="fa fa-github plain"></i></a></td>
+<td>Bohdan Petrushchak</td>
+<td><a href="https://github.com/TheWirtschaftsmann/"><i class="fa fa-github plain"></i></a></td>
+</tr>
+
+<tr>
+<td>Graham Robinson</td>
+<td><a href="https://github.com/grahamrobbo/"><i class="fa fa-github plain"></i></a></td>
+<td>Gregor Wolf</td>
+<td><a href="https://github.com/gregorwolf/"><i class="fa fa-github plain"></i></a></td>
+</tr>
+
+<tr>
+<td>Nuno Godinho</td>
+<td><a href="https://github.com/nununo/"><i class="fa fa-github plain"></i></a></td>
+<td>Fabio Zuber</td>
+<td><a href="https://github.com/Sirius-A/"><i class="fa fa-github plain"></i></a></td>
+</tr>
+
+<tr>
+<td>Fabian Lupa</td>
+<td><a href="https://github.com/flaiker/"><i class="fa fa-github plain"></i></a></td>
+<td>test</td>
+<td><a href="https://github.com/test/"><i class="fa fa-github plain"></i></a></td>
+</tr>
+
+<tr>
+<td>test</td>
+<td><a href="https://github.com/test/"><i class="fa fa-github plain"></i></a></td>
+<td>test</td>
+<td><a href="https://github.com/test/"><i class="fa fa-github plain"></i></a></td>
+</tr>
+
+<tr>
+<td>test</td>
+<td><a href="https://github.com/test/"><i class="fa fa-github plain"></i></a></td>
+<td>test</td>
+<td><a href="https://github.com/test/"><i class="fa fa-github plain"></i></a></td>
+</tr>
+
+<tr>
+<td>test</td>
+<td><a href="https://github.com/test/"><i class="fa fa-github plain"></i></a></td>
+<td>test</td>
+<td><a href="https://github.com/test/"><i class="fa fa-github plain"></i></a></td>
+</tr>
+
+<tr>
+<td>test</td>
+<td><a href="https://github.com/test/"><i class="fa fa-github plain"></i></a></td>
+<td>test</td>
+<td><a href="https://github.com/test/"><i class="fa fa-github plain"></i></a></td>
+</tr>
+
+<tr>
+<td>test</td>
+<td><a href="https://github.com/test/"><i class="fa fa-github plain"></i></a></td>
+<td>test</td>
+<td><a href="https://github.com/test/"><i class="fa fa-github plain"></i></a></td>
+</tr>
+</table>
+</section>
+
+<section>
+<h3>Design Goals</h3>
+<ul>
+<li>Easy installation</li>
+<li>Easy upgrade</li>
+<li>Small system footprint</li>
+<li>Code readable in git repository</li>
+</ul>
+</section>
+
+<section>
+<h3>Connectivity</h3>
+<pre><code class="language-abap">cl_http_client=>create_by_url(
+  EXPORTING
+    url    = 'https://github.com'
+    ssl_id = 'ANONYM'
+  IMPORTING
+    client = li_client ).
+li_client->request->set_cdata( '' ).
+li_client->request->set_header_field(
+  name  = '~request_method'
+  value = 'GET' ).
+li_client->request->set_header_field(
+  name  = 'user-agent'
+  value = 'git/abapGitv1.9.7' ).
+li_client->request->set_header_field(
+  name  = '~request_uri'
+  value = '/larshp/abapOpenChecks.git/info/refs?service=git-upload-pack' ).
+li_client->send( ).
+</code></pre>
+<pre class="fragment fade-up">
+001e# service=git-upload-pack
+000000fb868c5c06d2b51f6b83668f80922260f42a7ff4ca HEAD multi_ack thin-pack ...
+003f868c5c06d2b51f6b83668f80922260f42a7ff4ca refs/heads/master
+0040c1398119983b0ae48ec4091d9519194768a71bae refs/pull/268/head
+0000
+</pre>
+</section>
+
+<section>
+<section>
+<h3>Serialization</h3>
+<img src="img/hello.png" class="plain">
+</section>
+<section>
+<u>zhello.prog.abap</u>
+<pre><code class="language-abap">REPORT zhello.
+
+WRITE 'hello'.
+</code></pre>
+<u>zhello.prog.xml</u>
+<pre><code class="language-markup">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;abapGit version=&quot;v1.0.0&quot; serializer=&quot;LCL_OBJECT_PROG&quot; serializer_version=&quot;v1.0.0&quot;&gt;
+ &lt;asx:abap xmlns:asx=&quot;http://www.sap.com/abapxml&quot; version=&quot;1.0&quot;&gt;
+  &lt;asx:values&gt;
+   &lt;PROGDIR&gt;
+    &lt;NAME&gt;ZHELLO&lt;/NAME&gt;
+    &lt;STATE&gt;A&lt;/STATE&gt;
+    &lt;VARCL&gt;X&lt;/VARCL&gt;
+    &lt;SUBC&gt;1&lt;/SUBC&gt;
+    &lt;RLOAD&gt;E&lt;/RLOAD&gt;
+    &lt;FIXPT&gt;X&lt;/FIXPT&gt;
+    &lt;UCCHECK&gt;X&lt;/UCCHECK&gt;
+   &lt;/PROGDIR&gt;
+   &lt;TPOOL&gt;
+    &lt;item&gt;
+     &lt;ID&gt;R&lt;/ID&gt;
+     &lt;ENTRY&gt;test&lt;/ENTRY&gt;
+     &lt;LENGTH&gt;4&lt;/LENGTH&gt;
+    &lt;/item&gt;
+   &lt;/TPOOL&gt;
+  &lt;/asx:values&gt;
+ &lt;/asx:abap&gt;
+&lt;/abapGit&gt;
+</code></pre>
+</section>
+
+<section>
+<h3>And deserialization</h3>
+All files can be imported back into the ABAP system
+</section>
+</section>
+
+<section>
+<h3>Supported object types</h3>
+<table>
+<tr>
+<td>ACID</td>
+<td>AUTH</td>
+<td>CLAS</td>
+<td>DCLS</td>
+<td>DDLS</td>
+<td>DOCT</td>
+</tr><tr>
+<td>DOCV</td>
+<td>DOMA</td>
+<td>DTEL</td>
+<td>ENHC</td>
+<td>ENHO</td>
+<td>ENHS</td>
+</tr><tr>
+<td>ENQU</td>
+<td>FUGR</td>
+<td>IARP</td>
+<td>IASP</td>
+<td>IATU</td>
+<td>MSAG</td>
+</tr><tr>
+<td>NROB</td>
+<td>PARA</td>
+<td>PINF</td>
+<td>PROG</td>
+<td>SAMC</td>
+<td>SAPC</td>
+</tr><tr>
+<td>SFBF</td>
+<td>SFBS</td>
+<td>SFSW</td>
+<td>SHI3</td>
+<td>SHLP</td>
+<td>SICF</td>
+</tr><tr>
+<td>SPLO</td>
+<td>SSFO</td>
+<td>SSST</td>
+<td>SFPI</td>
+<td>SFPF</td>
+<td>SMIM</td>
+</tr><tr>
+<td>STYL</td>
+<td>SUSC</td>
+<td>SUSO</td>
+<td>TABL</td>
+<td>TOBJ</td>
+<td>TRAN</td>
+</tr><tr>
+<td>TTYP</td>
+<td>TYPE</td>
+<td>VCLS</td>
+<td>VIEW</td>
+<td>W3HT</td>
+<td>W3MI</td>
+</tr><tr>
+<td>WAPA</td>
+<td>WDYA</td>
+<td>WDYN</td>
+<td>WEBI</td>
+<td>XSLT</td>
+<td></td>
+</tr>
+</table>
+</section>
+
+<section>
+<h3>Github Support</h3>
+<table>
+<tr><td>
+<u>The HTTP header incident</u><br>
+<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.2">rfc2616-sec4.html#sec4.2</a><br>
+"Field names are case-insensitive"
+</td><td>
+<br>
+<i class="fa fa-thumbs-o-up fa-5x plain"></i>
+</td></tr>
+<tr><td colspan="2">
+<u>The SHA1 mismatch</u><br>
+Git protocol: "Server and client MUST use lowercase for obj-id, both MUST treat obj-id as case-insensitive."<br>
+</td></tr>
+</table>
+</section>
+
+<section>
+<h3>Features: Works With</h3>
+<table>
+<tr><td>
+<a href="https://hcp.sap.com"><img src="./img/logos/hcp.png" width="650" class="plain"></a>
+</td><td>
+<a href="https://github.com"><img src="./img/logos/GitHub_Logo.png" width="250" class="plain"></a>
+</td></tr>
+<tr><td align="center">
+<a href="https://www.visualstudio.com/team-services/git/"><img src="./img/logos/vs.png" width="550" class="plain"></a><br>
+<div style="color: rgb(104,33,122);">Team Services</div>
+</td><td>
+<a href="https://about.gitlab.com"><img src="./img/logos/gitlab.svg" width="250" class="plain"></a>
+</td></tr>
+<tr><td>
+<a href="https://github.com/larshp/abapGitServer"><img src="./img/logos/abapgitserver.svg" width="550" class="plain"></a><br>
+</td><td>
+<a href="https://bitbucket.org"><img src="./img/logos/bitbucket_rgb_blue.svg" width="250" class="plain"></a>
+</td></tr>
+</table>
+</section>
+
+<section>
+<h3>Features: Explore</h3>
+<img src="img/abapgit_1_33_3.png" class="plain" width="800px">
+</section>
+
+<section>
+<h3>Features: Diff</h3>
+<img src="img/diff2.png" class="plain">
+</section>
+
+<section>
+<h3>Features: Offline projects</h3>
+<img src="img/offline.png" class="plain">
+</section>
+
+<section>
+<h3>Features: Branches</h3>
+<img src="img/branch_overview.png" class="plain">
+</section>
+
+<section>
+<div>
+<h3>Features: Background mode</h3>
+<img src="img/background.png" class="plain" height="550px">
+</div>
+</section>
+
+<section>
+<h3>Use case: Share/Collaborate</h3>
+todo, elaborate
+<i class="mega-octicon really-more-mega octicon-git-branch"></i>
+&nbsp;&nbsp;&nbsp;
+<i class="mega-octicon really-more-mega octicon-git-commit"></i>
+&nbsp;&nbsp;&nbsp;
+<i class="mega-octicon really-more-mega octicon-git-pull-request"></i>
+&nbsp;&nbsp;&nbsp;
+<i class="mega-octicon really-more-mega octicon-thumbsup"></i>
+&nbsp;&nbsp;&nbsp;
+<i class="mega-octicon really-more-mega octicon-git-merge"></i>
+&nbsp;&nbsp;&nbsp;
+<i class="mega-octicon really-more-mega octicon-history"></i>
+</section>
+
+<section>
+<h3>Use case: Extra visibility/backup</h3>
+todo, update
+<img src="img/transparency.png" class="plain" height="500px"><br>
+<a href="https://github.com/larshp/abapGit/wiki/Using-abapGit-and-abapGitServer-for-regular-backup">abapGitServer Setup Guide</a>
+</section>
+
+<section>
+<h3>Labs Preview: Signing Commits</h3>
+<i class="fa fa-bug plain"></i><br>
+<img src="img/sign2.png" class="plain">
+<a href="https://github.com/larshp/abapGit/issues/358">https://github.com/larshp/abapGit/issues/358</a>
+</section>
+
+<section>
+<h3>ABAP</h3>
+<table><tr><td>
+Continuous integration via <a href="https://travis-ci.org/">Travis-CI</a><br>
+<ul>
+<li><a href="https://github.com/larshp/abapmerge">abapmerge</a></li>
+<li><a href="https://github.com/larshp/abaplint">abaplint</a></li>
+</ul>
+<br><br>
+<ul>
+<li>Instant shipping, just ship it(no state)</li>
+<li>Delivery to old ABAP AS versions(7.02+)</li>
+<li>Open Open Source</li>
+<li>Git workflow</li>
+<a href="http://searchsap.techtarget.com/tip/Implementing-modern-practices-in-an-ABAP-development-shop">Decentralized development(Ethan Jewett)</a>
+</ul>
+</td></tr></table>
+</section>
+
+<section>
+<h3>DEMO</h3>
+</section>
+
+<section>
+<h2>#ABAPisNotDead</h2>
+<i class="fa fa-sun-o plain"></i>
+<br>
+<table>
+<tr><td>
+<h3>Slides</h3></td><td>
+<a href="https://larshp.github.io/sitbal2017">https://larshp.github.io/sitbal2017</a>
+</td></tr>
+<tr><td>
+<h3>Contribute</h3></td><td>
+<a href="http://abapgit.org">http://abapgit.org</a>
+</td></tr>
+<tr><td>
+<h3>Twitter</h3></td><td>
+<a href="https://twitter.com/LarsHvam">@LarsHvam</a>
+</td></tr>
+</table>
+</section>
+</div>
+</div>
+
+</div>
+</div>
+
+<script src="squares.js"></script>
+
+<script src="ext/reveal.js-3.3.0/lib/js/head.min.js"></script>
+<script src="ext/reveal.js-3.3.0/js/reveal.js"></script>
+
+<script>
+// More info https://github.com/hakimel/reveal.js#configuration
+/*global Reveal squaresSlideReady squaresSlideChanged*/
+Reveal.initialize({
+	history: true,
+	slideNumber: true,
+	// More info https://github.com/hakimel/reveal.js#dependencies
+	dependencies: [
+		{ src: 'ext/reveal.js-3.3.0/plugin/notes/notes.js', async: true },
+	]
+});
+Reveal.addEventListener('ready', squaresSlideReady);
+Reveal.addEventListener('slidechanged', squaresSlideChanged);
+</script>
+<script src="ext/prism/prism.js"></script>
+
+</body>
+</html>
